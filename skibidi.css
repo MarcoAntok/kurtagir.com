@@ -1,0 +1,85 @@
+body {
+  font-family: 'chalk';
+  text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+  color: white;
+  background-image: url("chalkboard.png"); /* background-image */
+  background-repeat: no-repeat; 
+  background-size:cover;
+  background-attachment: fixed;
+  
+}
+
+@font-face {
+  font-family: chalk;
+  src: url(rudiment.ttf);
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h3 {
+  text-decoration: underline; /* text-decoration */
+}
+
+.bocchers{
+  border-style: double; /* border-style */
+  border-color: whitesmoke; /* border-color */
+  border-width: 5px; /* border-width */
+  background-image: url('wall.jpg');
+  background-position: 50% 25%;
+  background-size: 750px 421.875px;
+  opacity: 0.7
+}
+
+.rainbow{
+  animation: boryokini 10s ease infinite;
+}
+
+@keyframes boryokini {
+  0%{background-color: rgba(255, 192, 203, 0.2)} /* Bocchi */
+  25%{background-color: rgba(250, 250, 210, 0.2)} /* Nijika */
+  50%{background-color: rgba(176, 196, 222, 0.2)} /* Ryo */
+  75%{background-color: rgba(240, 128, 128, 0.2)} /* Kita */
+  100%{background-color: rgba(255, 192, 203, 0.2)} /* back to Bocchi */
+} /* background-color */
+
+.otherbody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  border-style: double;
+  border-radius: 8px;
+}
+.gifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gifs img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+.bo {
+  list-style-image: url("bopix.png")
+}
+.ryo {
+  list-style-image: url("ryopix.png")
+}
+.ni {
+  list-style-image: url("nipix.png")
+}
+.ki {
+  list-style-image: url("kipix.png")
+}
+/* list-style-image */
